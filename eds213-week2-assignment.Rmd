@@ -1,0 +1,12 @@
+---
+title: "EDS 213 Week 2 Assignment 2.1 & 2.2"
+author: "Halina Do-Linh"
+date: "10/6/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## 
