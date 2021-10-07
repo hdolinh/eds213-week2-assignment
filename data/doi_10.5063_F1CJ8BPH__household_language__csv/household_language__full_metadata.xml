@@ -1,0 +1,1319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eml:eml xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.2" packageId="doi:10.5063/F1CJ8BPH" xsi:schemaLocation="eml://ecoinformatics.org/eml-2.1.1 eml.xsd" system="https://arcticdata.io">
+  <dataset>
+    <title>Languages used in Alaskan households, 1990-2015</title>
+    <creator id="5032432871411121">
+      <individualName>
+        <givenName>Jeanette</givenName>
+        <surName>Clark</surName>
+      </individualName>
+      <organizationName>National Center for Ecological Analysis and Synthesis</organizationName>
+      <address>
+        <deliveryPoint>735 State St #300</deliveryPoint>
+        <city>Santa Barbara</city>
+        <administrativeArea>California</administrativeArea>
+        <postalCode>93101</postalCode>
+      </address>
+      <electronicMailAddress>jclark@nceas.ucsb.edu</electronicMailAddress>
+    </creator>
+    <creator id="1863650665544061">
+      <individualName>
+        <givenName>Sharis</givenName>
+        <surName>Ochs</surName>
+      </individualName>
+      <organizationName>National Center for Ecological Analysis and Synthesis</organizationName>
+      <electronicMailAddress>sharisochs@umail.ucsb.edu</electronicMailAddress>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>Derek</givenName>
+        <surName>Strong</surName>
+      </individualName>
+      <organizationName>National Center for Ecological Analysis and Synthesis</organizationName>
+      <electronicMailAddress>dstrong@nceas.ucsb.edu</electronicMailAddress>
+    </creator>
+    <creator id="8840680039566433">
+      <organizationName>National Historic Geographic Information System</organizationName>
+      <address>
+        <deliveryPoint>IPUMS NHGIS,
+Institute for Social Research and Data Innovation,
+University of Minnesota,
+50 Willey Hall, 
+225 19th Ave S </deliveryPoint>
+        <city>Minneapolis</city>
+        <administrativeArea>Minnesota</administrativeArea>
+        <postalCode>55455</postalCode>
+      </address>
+      <phone phonetype="voice">612-624-5818</phone>
+      <phone phonetype="facsimile">612-626-8375</phone>
+      <electronicMailAddress>nhgis@umn.edu</electronicMailAddress>
+    </creator>
+    <metadataProvider id="6720142840381129">
+      <individualName>
+        <givenName>Jeanette</givenName>
+        <surName>Clark</surName>
+      </individualName>
+      <organizationName>National Center for Ecological Analysis and Synthesis</organizationName>
+      <address>
+        <deliveryPoint>735 State St #300</deliveryPoint>
+        <city>Santa Barbara</city>
+        <administrativeArea>California</administrativeArea>
+        <postalCode>93101</postalCode>
+      </address>
+      <electronicMailAddress>jclark@nceas.ucsb.edu</electronicMailAddress>
+    </metadataProvider>
+    <pubDate>2018-04-17</pubDate>
+    <abstract>
+      <section>
+        <para>These data show languages spoken in the household for people over the age of 5 in Alaska, in addition to the total population, by community. These data come from census surveys, both from the American Community Survey and the decennial census Population and language use data were originally extracted from IPUMS National Historic Geographic Information Systems website: <ulink url="https://data2.nhgis.org/main"><citetitle>https://data2.nhgis.org/main</citetitle></ulink> (Citation: Steven Manson, Jonathan Schroeder, David Van Riper, and Steven Ruggles. IPUMS National Historical Geographic Information System: Version 12.0 [Database]. Minneapolis: University of Minnesota. 2017. <ulink url="http://doi.org/10.18128/D050.V12.0"><citetitle>http://doi.org/10.18128/D050.V12.0</citetitle></ulink>). The file "household_language.csv" is a consolidation of a number of tables downloaded from this system (see methods for more information). The "language.Rmd" file is a script which combines the files by year into a single file. It also cleans up place names (including typographical errors) and uses the USGS place names dataset and the SASAP regions dataset to assign latitude and longitude values and region values to each place in the dataset. Additionally, the "language_vis.Rmd" file is a script that uses this data to visualize Native language use by community, displayed in the "language_vis.html" file.</para>
+      </section>
+    </abstract>
+    <intellectualRights>
+      <para>This dataset is licensed under Creative Commons Attribution 4.0 (https://creativecommons.org/licenses/by/4.0/)</para>
+    </intellectualRights>
+    <distribution>
+      <offline>
+        <mediumName>digital </mediumName>
+      </offline>
+    </distribution>
+    <coverage>
+      <geographicCoverage>
+        <geographicDescription>Alaska, USA</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-172</westBoundingCoordinate>
+          <eastBoundingCoordinate>-130</eastBoundingCoordinate>
+          <northBoundingCoordinate>71.83</northBoundingCoordinate>
+          <southBoundingCoordinate>51.33</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <temporalCoverage>
+        <rangeOfDates>
+          <beginDate>
+            <calendarDate>1990</calendarDate>
+          </beginDate>
+          <endDate>
+            <calendarDate>2015</calendarDate>
+          </endDate>
+        </rangeOfDates>
+      </temporalCoverage>
+    </coverage>
+    <contact id="1974416394200658">
+      <individualName>
+        <givenName>Jeanette</givenName>
+        <surName>Clark</surName>
+      </individualName>
+      <organizationName>National Center for Ecological Analysis and Synthesis</organizationName>
+      <address>
+        <deliveryPoint>735 State St #300</deliveryPoint>
+        <city>Santa Barbara</city>
+        <administrativeArea>California</administrativeArea>
+        <postalCode>93101</postalCode>
+      </address>
+      <electronicMailAddress>jclark@nceas.ucsb.edu</electronicMailAddress>
+    </contact>
+    <methods>
+      <methodStep>
+        <description>
+          <section>
+            <para>
+  Original data were sourced from the IPUMS National Historical
+  Geographic Information System. For each year, total population data
+  and language data were retrieved. These individual table identifiers
+  from the NHGIS are listed below. These were then processed following
+  the steps in “language.Rmd” to produce the output in
+  "household_language.csv".
+</para>
+          </section>
+          <section>
+            <title>
+  1990 Language
+</title>
+            <para>
+  Dataset: 1990 Census: STF 3 - Sample-Based Data
+</para>
+            <para>
+  NHGIS code: 1990_STF3
+</para>
+            <para>
+  NHGIS ID: ds123
+</para>
+          </section>
+          <section>
+            <title>
+  1990 Population
+</title>
+            <para>
+  Dataset: 1990 Census: STF 1 - 100% Data
+</para>
+            <para>
+  NHGIS code: 1990_STF1
+</para>
+            <para>
+  NHGIS ID: ds120
+</para>
+          </section>
+          <section>
+            <title>
+  2000 Language
+</title>
+            <para>
+  Dataset: 2000 Census: SF 3a - Sample-Based Data [Areas Larger Than
+  Block Groups]
+</para>
+            <para>
+  NHGIS code: 2000_SF3a
+</para>
+            <para>
+  NHGIS ID: ds151
+</para>
+          </section>
+          <section>
+            <title>
+  2000 Population
+</title>
+            <para>
+  Dataset: 2000 Census: SF 1a - 100% Data [Areas Larger Than Block
+  Groups]
+</para>
+            <para>
+  NHGIS code: 2000_SF1a
+</para>
+            <para>
+  NHGIS ID: ds146
+</para>
+          </section>
+          <section>
+            <title>
+  2009 Language
+</title>
+            <para>
+  Dataset: 2009 American Community Survey: 5-Year Data [2005-2009,
+  Tracts &amp; Larger Areas]
+</para>
+            <para>
+  NHGIS code: 2005_2009_ACS5b
+</para>
+            <para>
+  NHGIS ID: ds196
+</para>
+          </section>
+          <section>
+            <title>
+  2009 Population
+</title>
+            <para>
+  Dataset: 2009 American Community Survey: 5-Year Data [2005-2009, Block
+  Groups &amp; Larger Areas]
+</para>
+            <para>
+  NHGIS code: 2005_2009_ACS5a
+</para>
+            <para>
+  NHGIS ID: ds195
+</para>
+          </section>
+          <section>
+            <title>
+  2010 Language
+</title>
+            <para>
+  Dataset: 2010 American Community Survey: 5-Year Data [2006-2010,
+  Tracts &amp; Larger Areas]
+</para>
+            <para>
+  NHGIS code: 2006_2010_ACS5b
+</para>
+            <para>
+  NHGIS ID: ds177
+</para>
+          </section>
+          <section>
+            <title>
+  2010 Population
+</title>
+            <para>
+  Dataset: 2010 American Community Survey: 5-Year Data [2006-2010, Block
+  Groups &amp; Larger Areas]
+</para>
+            <para>
+  NHGIS code: 2006_2010_ACS5a
+</para>
+            <para>
+  NHGIS ID: ds176
+</para>
+          </section>
+          <section>
+            <title>
+  2011 Language
+</title>
+            <para>
+  Dataset: 2011 American Community Survey: 5-Year Data [2007-2011,
+  Tracts &amp; Larger Areas]
+</para>
+            <para>
+  NHGIS code: 2007_2011_ACS5b
+</para>
+            <para>
+  NHGIS ID: ds185
+</para>
+          </section>
+          <section>
+            <title>
+  2011 Population
+</title>
+            <para>
+  Dataset: 2011 American Community Survey: 5-Year Data [2007-2011, Block
+  Groups &amp; Larger Areas]
+</para>
+            <para>
+  NHGIS code: 2007_2011_ACS5a
+</para>
+            <para>
+  NHGIS ID: ds184
+</para>
+          </section>
+          <section>
+            <title>
+  2012 Language
+</title>
+            <para>
+  Dataset: 2012 American Community Survey: 5-Year Data [2008-2012,
+  Tracts &amp; Larger Areas]
+</para>
+            <para>
+  NHGIS code: 2008_2012_ACS5b
+</para>
+            <para>
+  NHGIS ID: ds192
+</para>
+          </section>
+          <section>
+            <title>
+  2012 Population
+</title>
+            <para>
+  Dataset: 2012 American Community Survey: 5-Year Data [2008-2012, Block
+  Groups &amp; Larger Areas]
+</para>
+            <para>
+  NHGIS code: 2008_2012_ACS5a
+</para>
+            <para>
+  NHGIS ID: ds191
+</para>
+          </section>
+          <section>
+            <title>
+  2013 Language
+</title>
+            <para>
+  Dataset: 2013 American Community Survey: 5-Year Data [2009-2013,
+  Tracts &amp; Larger Areas]
+</para>
+            <para>
+  NHGIS code: 2009_2013_ACS5b
+</para>
+            <para>
+  NHGIS ID: ds202
+</para>
+          </section>
+          <section>
+            <title>
+  2013 Population
+</title>
+            <para>
+  Dataset: 2013 American Community Survey: 5-Year Data [2009-2013, Block
+  Groups &amp; Larger Areas]
+</para>
+            <para>
+  NHGIS code: 2009_2013_ACS5a
+</para>
+            <para>
+  NHGIS ID: ds201
+</para>
+          </section>
+          <section>
+            <title>
+  2014 Language
+</title>
+            <para>
+  Dataset: 2014 American Community Survey: 5-Year Data [2010-2014,
+  Tracts &amp; Larger Areas]
+</para>
+            <para>
+  NHGIS code: 2010_2014_ACS5b
+</para>
+            <para>
+  NHGIS ID: ds207
+</para>
+          </section>
+          <section>
+            <title>
+  2014 Population
+</title>
+            <para>
+  Dataset: 2014 American Community Survey: 5-Year Data [2010-2014, Block
+  Groups &amp; Larger Areas]
+</para>
+            <para>
+  NHGIS code: 2010_2014_ACS5a
+</para>
+            <para>
+  NHGIS ID: ds206
+</para>
+          </section>
+          <section>
+            <title>
+  2015 Language
+</title>
+            <para>
+  Dataset: 2015 American Community Survey: 5-Year Data [2011-2015, Tracts &amp; Larger Areas]
+</para>
+            <para>
+  NHGIS code: 2011_2015_ACS5b
+</para>
+            <para>
+  NHGIS ID: ds216
+</para>
+          </section>
+          <section>
+            <title>
+  2015 Population
+</title>
+            <para>
+  Dataset: 2015 American Community Survey: 5-Year Data [2011-2015, Block Groups &amp; Larger Areas]
+</para>
+            <para>
+  NHGIS code: 2011_2015_ACS5a
+</para>
+            <para>
+  NHGIS ID: ds215
+</para>
+          </section>
+          <section>
+            <para>
+ First, a dataframe was constructed with only the columns of interest (file year, speakers per language and location names) from each of the original language data files, and NHGIS codes from the NHGIS language codebook were converted to more human-readable names. Total population data for each place name were then added to this table from the original population data files. Column names from the individual years’ dataframes were edited as necessary to maintain consistent naming for all of the data. These dataframes were then combined into a single table containing data for all of the years. Additional corrections of column names were made after this step; for example, “other_slavic_language” in the 1990 dataset was changed to “other_slavic_languages”. Next, census place names were cleaned by removing extraneous characters, correcting spelling typos, and making certain abbreviations consistent (such as place names beginning with “St” or “St.”, which were converted to “Saint”).
+
+</para>
+          </section>
+          <section>
+            <para>
+Once the language data reformatting was complete, we attached additional location data. This included latitude and longitude that we attached by joining a table of USGS location data using the city names. We also joined a shapefile defining the boundaries of SASAP regions in order to assign a SASAP region to every location that had latitude and longitude coordinates (those locations that were not present in the USGS dataset were not given coordinates). Locations that did not have coordinates were assigned to a SASAP region using an additional community names list that had been created for this purpose.
+</para>
+          </section>
+        </description>
+      </methodStep>
+    </methods>
+    <project>
+      <title>State of Alaska’s Salmon and People</title>
+      <personnel>
+        <individualName>
+          <givenName>Matt</givenName>
+          <surName>Jones</surName>
+        </individualName>
+        <organizationName>NCEAS/UCSB</organizationName>
+        <role>principalInvestigator</role>
+      </personnel>
+      <personnel>
+        <individualName>
+          <givenName>Ian</givenName>
+          <surName>Dutton</surName>
+        </individualName>
+        <organizationName>Nautilus Impact Investing</organizationName>
+        <role>principalInvestigator</role>
+      </personnel>
+      <personnel>
+        <individualName>
+          <givenName>Frank</givenName>
+          <surName>Davis</surName>
+        </individualName>
+        <organizationName>NCEAS/UCSB</organizationName>
+        <role>principalInvestigator</role>
+      </personnel>
+      <personnel>
+        <individualName>
+          <givenName>Jeanette</givenName>
+          <surName>Clark</surName>
+        </individualName>
+        <organizationName>NCEAS/UCSB</organizationName>
+        <role>dataCoordinator</role>
+      </personnel>
+      <personnel>
+        <individualName>
+          <givenName>Jared</givenName>
+          <surName>Kibele</surName>
+        </individualName>
+        <organizationName>NCEAS/UCSB</organizationName>
+        <role>programmer</role>
+      </personnel>
+      <abstract>
+        <para>State of Alaska’s Salmon and People (SASAP) and SASAP Data Task Force are both funded by the Gordon and Betty Moore Foundation. SASAP is a synthesis science project aimed to create an equitable decision-making platform for all stakeholders by addressing data gaps in Alaska’s salmon system through information synthesis, collaboration and stakeholder engagement. The SASAP Data Task Force assists the synthesis research effort through data collection, homogenization, management, and sustainability, under the direction of the synthesis project leads. The result of the efforts of these two projects is an Alaskan Salmon data catalog, containing all of the original and derived data products resulting from the synthesis research.</para>
+      </abstract>
+      <funding>
+        <para>State of Alaska’s Salmon and People (Gordon and Betty Moore Foundation Award 5124)</para>
+        <para>Data Task Forces for Better Synthesis Studies (Gordon and Betty Moore Foundation Award 5451)</para>
+      </funding>
+    </project>
+    <dataTable>
+      <entityName>household_language.csv</entityName>
+      <entityDescription>These data show languages spoken in the household for people over the age of 5 in Alaska, in addition to the total population, by community.</entityDescription>
+      <physical scope="document">
+        <objectName>household_language.csv</objectName>
+        <size unit="bytes">504830</size>
+        <authentication method="SHA1">bded9ef76d42ecbdfe307b1fbe058cb206ab4447</authentication>
+        <dataFormat>
+          <externallyDefinedFormat>
+            <formatName>text/csv</formatName>
+          </externallyDefinedFormat>
+        </dataFormat>
+        <distribution scope="document">
+          <online>
+            <url function="download">https://cn.dataone.org/cn/v2/resolve/urn:uuid:7fc6f6db-c5ea-426a-a743-1f2edafb43b8</url>
+          </online>
+        </distribution>
+      </physical>
+      <attributeList>
+        <attribute>
+          <attributeName>Year</attributeName>
+          <attributeDefinition>Year data were collected</attributeDefinition>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY</formatString>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>SASAP.Region</attributeName>
+          <attributeDefinition>State of Alaska’s Salmon and People (SASAP) region that city falls in</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>State of Alaska's Salmon and People (SASAP) region that city falls in</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>city</attributeName>
+          <attributeDefinition>City that data were collected from</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>City that data were collected from</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>lat</attributeName>
+          <attributeDefinition>Latitude of city</attributeDefinition>
+          <measurementScale>
+            <interval>
+              <unit>
+                <standardUnit>degree</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </interval>
+          </measurementScale>
+          <missingValueCode>
+            <code>"NA"</code>
+            <codeExplanation>no coordinate information, city is not in USGS places dataset</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>lng</attributeName>
+          <attributeDefinition>Longitude of city</attributeDefinition>
+          <measurementScale>
+            <interval>
+              <unit>
+                <standardUnit>degree</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </interval>
+          </measurementScale>
+          <missingValueCode>
+            <code>"NA"</code>
+            <codeExplanation>no coordinate information, city is not in USGS places dataset</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>total</attributeName>
+          <attributeDefinition>Total population of city in specified year</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>whole</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>speak_only_english</attributeName>
+          <attributeDefinition>Number of people in the city 5 years and older that speak only English at home</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>whole</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>german</attributeName>
+          <attributeDefinition>Number of people in the city 5 years and older that speak German at home</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>whole</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>yiddish</attributeName>
+          <attributeDefinition>Number of people in the city 5 years and older that speak Yiddish at home</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>whole</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>greek</attributeName>
+          <attributeDefinition>Number of people in the city 5 years and older that speak Greek at home</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>whole</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>indic</attributeName>
+          <attributeDefinition>Number of people in the city 5 years and older that speak an Indic language at home</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>whole</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>"NA"</code>
+            <codeExplanation>Languages categorized as Indic in 1990 are further broken down into more specific languages in later years</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>italian</attributeName>
+          <attributeDefinition>Number of people in the city 5 years and older that speak Italian at home</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>whole</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>french_or_french_creole</attributeName>
+          <attributeDefinition>Number of people in the city 5 years and older that speak French or French Creole at home</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>whole</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>"NA"</code>
+            <codeExplanation>Languages categorized as French or French Creole in 1990 are further broken down into more specific languages in later years</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>portuguese_or_portuguese_creole</attributeName>
+          <attributeDefinition>Number of people in the city 5 years and older that speak Portuguese or Portuguese Creole at home</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>whole</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>spanish_or_spanish_creole</attributeName>
+          <attributeDefinition>Number of people in the city 5 years and older that speak Spanish or Spanish Creole at home</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>whole</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>polish</attributeName>
+          <attributeDefinition>Number of people in the city 5 years and older that speak Polish at home</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>whole</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>russian</attributeName>
+          <attributeDefinition>Number of people in the city 5 years and older that speak Russian at home</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>whole</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>south_slavic</attributeName>
+          <attributeDefinition>Number of people in the city 5 years and older that speak a south Slavic language at home</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>whole</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>"NA"</code>
+            <codeExplanation>Languages categorized as South Slavic in 1990 are further broken down into more specific languages in later years</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>arabic</attributeName>
+          <attributeDefinition>Number of people in the city 5 years and older that speak Arabic at home</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>whole</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>tagalog</attributeName>
+          <attributeDefinition>Number of people in the city 5 years and older that speak Tagalog at home</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>whole</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>chinese</attributeName>
+          <attributeDefinition>Number of people in the city 5 years and older that speak Chinese at home</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>whole</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>hungarian</attributeName>
+          <attributeDefinition>Number of people in the city 5 years and older that speak Hungarian at home</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>whole</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>japanese</attributeName>
+          <attributeDefinition>Number of people in the city 5 years and older that speak Japanese at home</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>whole</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>korean</attributeName>
+          <attributeDefinition>Number of people in the city 5 years and older that speak Korean at home</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>whole</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>vietnamese</attributeName>
+          <attributeDefinition>Number of people in the city 5 years and older that speak Vietnamese at home</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>whole</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>other_and_unspecified_languages</attributeName>
+          <attributeDefinition>Number of people in the city 5 years and older that speak other and unspecified languages at home</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>whole</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>french_incl_patois_cajun</attributeName>
+          <attributeDefinition>Number of people in the city 5 years and older that speak French, including Patois/Cajun at home</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>whole</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>"NA"</code>
+            <codeExplanation>Not recorded in 1990. All French speakers are categorized as french_or_french_creole</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>french_creole</attributeName>
+          <attributeDefinition>Number of people in the city 5 years and older that speak French Creole at home</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>whole</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>"NA"</code>
+            <codeExplanation>Not recorded in 1990. All French speakers are categorized as french_or_french_creole</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>other_west_germanic_languages</attributeName>
+          <attributeDefinition>Number of people in the city 5 years and older that speak other West Germanic languages at home</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>whole</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>scandinavian_languages</attributeName>
+          <attributeDefinition>Number of people in the city 5 years and older that speak Scandinavian languages at home</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>whole</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>serbo_croatian</attributeName>
+          <attributeDefinition>Number of people in the city 5 years and older that speak Serbo-Croatian at home</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>whole</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>"NA"</code>
+            <codeExplanation>Not recoreded in 1990</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>other_slavic_languages</attributeName>
+          <attributeDefinition>Number of people in the city 5 years and older that speak other Slavic languages at home</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>whole</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>armenian</attributeName>
+          <attributeDefinition>Number of people in the city 5 years and older that speak Armenian at home</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>whole</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>"NA"</code>
+            <codeExplanation>Not recorded in 1990</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>persian</attributeName>
+          <attributeDefinition>Number of people in the city 5 years and older that speak Persian at home</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>whole</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>"NA"</code>
+            <codeExplanation>Not recorded in 1990</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>gujarati</attributeName>
+          <attributeDefinition>Number of people in the city 5 years and older that speak Gujarati at home</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>whole</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>"NA"</code>
+            <codeExplanation>Not recorded in 1990</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>hindi</attributeName>
+          <attributeDefinition>Number of people in the city 5 years and older that speak Hindi at home</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>whole</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>"NA"</code>
+            <codeExplanation>Not recorded in 1990</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>urdu</attributeName>
+          <attributeDefinition>Number of people in the city 5 years and older that speak Urdu at home</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>whole</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>"NA"</code>
+            <codeExplanation>Not recorded in 1990</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>other_indic_languages</attributeName>
+          <attributeDefinition>Number of people in the city 5 years and older that speak other Indic languages at home</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>whole</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>"NA"</code>
+            <codeExplanation>Not recorded in 1990. All Indic languages are categorized as indic</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>other_indo_european_languages</attributeName>
+          <attributeDefinition>Number of people in the city 5 years and older that speak other Indo-European languages at home</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>whole</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>mon_khmer_cambodian</attributeName>
+          <attributeDefinition>Number of people in the city 5 years and older that speak Mon-Khmer at home</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>whole</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>hmong</attributeName>
+          <attributeDefinition>Number of people in the city 5 years and older that speak Hmong at home</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>whole</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>"NA"</code>
+            <codeExplanation>Not recorded in 1990</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>thai</attributeName>
+          <attributeDefinition>Number of people in the city 5 years and older that speak Thai at home</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>whole</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>"NA"</code>
+            <codeExplanation>Not recorded in 1990</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>laotian</attributeName>
+          <attributeDefinition>Number of people in the city 5 years and older that speak Laotian at home</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>whole</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>"NA"</code>
+            <codeExplanation>Not recorded in 1990</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>other_asian_languages</attributeName>
+          <attributeDefinition>Number of people in the city 5 years and older that speak other Asian languages at home</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>whole</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>"NA"</code>
+            <codeExplanation>Not recorded in 1990</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>other_pacific_island_languages</attributeName>
+          <attributeDefinition>Number of people in the city 5 years and older that speak other Pacific Island languages at home</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>whole</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>"NA"</code>
+            <codeExplanation>Not recorded in 1990</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>navajo</attributeName>
+          <attributeDefinition>Number of people in the city 5 years and older that speak Navajo at home</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>whole</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>"NA"</code>
+            <codeExplanation>Not recorded in 1990</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>other_native_north_american_languages</attributeName>
+          <attributeDefinition>Number of people in the city 5 years and older that speak other native North American languages at home</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>whole</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>hebrew</attributeName>
+          <attributeDefinition>Number of people in the city 5 years and older that speak Hebrew at home</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>whole</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>"NA"</code>
+            <codeExplanation>Not recorded in 1990</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>african_languages</attributeName>
+          <attributeDefinition>Number of people in the city 5 years and older that speak African languages at home</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>whole</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>"NA"</code>
+            <codeExplanation>Not recorded in 1990</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>data_file_year</attributeName>
+          <attributeDefinition>Year or years that the data were collected</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Year or years that the data were collected</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+      </attributeList>
+    </dataTable>
+    <otherEntity id="urn:uuid:b4f39b95-8cb3-405a-93f6-303ef13e9511" scope="document">
+      <entityName>language.Rmd</entityName>
+      <entityDescription>R Markdown script for wrangling and tidying language data.</entityDescription>
+      <physical scope="document">
+        <objectName>language.Rmd</objectName>
+        <size unit="bytes">18379</size>
+        <authentication method="SHA1">05edbd17605917a15291ea0db6f32de430abd147</authentication>
+        <dataFormat>
+          <externallyDefinedFormat>
+            <formatName>text/x-rmarkdown</formatName>
+          </externallyDefinedFormat>
+        </dataFormat>
+        <distribution scope="document">
+          <online>
+            <url function="download">https://cn.dataone.org/cn/v2/resolve/urn:uuid:b4f39b95-8cb3-405a-93f6-303ef13e9511</url>
+          </online>
+        </distribution>
+      </physical>
+      <entityType>Other</entityType>
+    </otherEntity>
+    <otherEntity id="urn:uuid:41801f4e-8ace-4af9-b338-763f581d5e10" scope="document">
+      <entityName>language_vis.Rmd</entityName>
+      <entityDescription>R Markdown script for visualizing Native language use by community.</entityDescription>
+      <physical scope="document">
+        <objectName>language_vis.Rmd</objectName>
+        <size unit="bytes">30190</size>
+        <authentication method="SHA1">6a0a6f298d113226b1b377f81af1954317641714</authentication>
+        <dataFormat>
+          <externallyDefinedFormat>
+            <formatName>text/x-rmarkdown</formatName>
+          </externallyDefinedFormat>
+        </dataFormat>
+        <distribution scope="document">
+          <online>
+            <url function="download">https://cn.dataone.org/cn/v2/resolve/urn:uuid:41801f4e-8ace-4af9-b338-763f581d5e10</url>
+          </online>
+        </distribution>
+      </physical>
+      <entityType>Other</entityType>
+    </otherEntity>
+    <otherEntity id="urn:uuid:65877364-5214-4d91-8c07-f505cb7e6038" scope="document">
+      <entityName>language_vis.html</entityName>
+      <entityDescription>HTML file displaying visualizations of Native language use by community.</entityDescription>
+      <physical scope="document">
+        <objectName>language_vis.html</objectName>
+        <size unit="bytes">66919910</size>
+        <authentication method="SHA1">7548441e335be9a48c2327d72d250146d5ee33fe</authentication>
+        <dataFormat>
+          <externallyDefinedFormat>
+            <formatName>text/html</formatName>
+          </externallyDefinedFormat>
+        </dataFormat>
+        <distribution scope="document">
+          <online>
+            <url function="download">https://cn.dataone.org/cn/v2/resolve/urn:uuid:65877364-5214-4d91-8c07-f505cb7e6038</url>
+          </online>
+        </distribution>
+      </physical>
+      <entityType>Other</entityType>
+    </otherEntity>
+  </dataset>
+</eml:eml>

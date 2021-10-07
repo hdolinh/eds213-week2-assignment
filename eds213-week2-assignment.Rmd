@@ -2,11 +2,62 @@
 title: "EDS 213 Week 2 Assignment 2.1 & 2.2"
 author: "Halina Do-Linh"
 date: "10/6/2021"
-output: html_document
+output: 
+  html_document:
+    code_folding: hide
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+library(dataRetrieval)
+library(metajam)
+library(here)
 ```
 
-## 
+# Assignment 2.1 - `dataRetrieval`
+```{r}
+siteNumber <- c("11118500", "11113500") # added santa paula's site number 
+parameterCd <- "00060" # discharge number is standard
+startDate <- "2019-10-01"
+endDate <- "2020-10-05"
+
+vta_sp_discharge <- readNWISdv(siteNumber, parameterCd, startDate, endDate) %>% 
+  dplyr::rename("Discharge" = X_00060_00003)
+
+vta_sp_discharge_plot <- ggplot(data = vta_sp_discharge, aes(x = Date, y = Discharge, color = site_no)) +
+  geom_line() +
+  scale_color_manual(name = "Site Id", labels = c("Santa Paula", "Ventura"), values = c("red", "cyan4"))
+
+vta_sp_discharge_plot
+```
+
+**What is the best way to query multiple sites using this R package?** 
+
+- By creating a vector with the site numbers that you want, assigning this vector as an object, and then calling that object in the `readNWISdv()` function. 
+
+# Assignment 2.2 - `metajam`
+```{r, message=FALSE}
+# set inputs
+data_url <- "https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3A7fc6f6db-c5ea-426a-a743-1f2edafb43b8"
+
+# metajam::download_d1_data(data_url, here::here("data")) 
+# had to comment out metajam::download_d1_data() in order to knit 
+
+alaska_metadata <- read_d1_files(here::here("data", "Alaska-HouseholdLanguage-csv"))
+
+hh_data <- alaska_metadata$data # view data frame from alaska_metadata list
+```
+
+**Write a piece of code that will compute the percentage of Alaskan household speaking only English for the year 2009 to 2015**
+```{r, message=FALSE}
+eng_lang <- hh_data %>% 
+  select("Year", "city", "SASAP.Region", "lng", "lat", "total", "speak_only_english") %>%
+  group_by(Year) %>% 
+  summarize(pct_eng_lang = sum(speak_only_english) / sum(total))
+
+average_2009_2015 <- mean(eng_lang$pct_eng_lang)
+```
+
+The percent average of Alaskan households speaking only English from 2009 to 2015 is approximately 77%. 

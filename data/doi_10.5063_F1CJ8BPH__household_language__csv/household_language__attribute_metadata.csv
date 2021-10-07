@@ -1,0 +1,51 @@
+attributeName,attributeDefinition,formatString,measurementScale,domain,definition,unit,numberType,missingValueCode,missingValueCodeExplanation,metadata_pid
+Year,Year data were collected,YYYY,dateTime,dateTimeDomain,NA,NA,NA,NA,NA,doi:10.5063/F1CJ8BPH
+SASAP.Region,State of Alaska’s Salmon and People (SASAP) region that city falls in,NA,nominal,textDomain,State of Alaska's Salmon and People (SASAP) region that city falls in,NA,NA,NA,NA,doi:10.5063/F1CJ8BPH
+city,City that data were collected from,NA,nominal,textDomain,City that data were collected from,NA,NA,NA,NA,doi:10.5063/F1CJ8BPH
+lat,Latitude of city,NA,interval,numericDomain,NA,degree,real,"""NA""","no coordinate information, city is not in USGS places dataset",doi:10.5063/F1CJ8BPH
+lng,Longitude of city,NA,interval,numericDomain,NA,degree,real,"""NA""","no coordinate information, city is not in USGS places dataset",doi:10.5063/F1CJ8BPH
+total,Total population of city in specified year,NA,ratio,numericDomain,NA,number,whole,NA,NA,doi:10.5063/F1CJ8BPH
+speak_only_english,Number of people in the city 5 years and older that speak only English at home,NA,ratio,numericDomain,NA,number,whole,NA,NA,doi:10.5063/F1CJ8BPH
+german,Number of people in the city 5 years and older that speak German at home,NA,ratio,numericDomain,NA,number,whole,NA,NA,doi:10.5063/F1CJ8BPH
+yiddish,Number of people in the city 5 years and older that speak Yiddish at home,NA,ratio,numericDomain,NA,number,whole,NA,NA,doi:10.5063/F1CJ8BPH
+greek,Number of people in the city 5 years and older that speak Greek at home,NA,ratio,numericDomain,NA,number,whole,NA,NA,doi:10.5063/F1CJ8BPH
+indic,Number of people in the city 5 years and older that speak an Indic language at home,NA,ratio,numericDomain,NA,number,whole,"""NA""",Languages categorized as Indic in 1990 are further broken down into more specific languages in later years,doi:10.5063/F1CJ8BPH
+italian,Number of people in the city 5 years and older that speak Italian at home,NA,ratio,numericDomain,NA,number,whole,NA,NA,doi:10.5063/F1CJ8BPH
+french_or_french_creole,Number of people in the city 5 years and older that speak French or French Creole at home,NA,ratio,numericDomain,NA,number,whole,"""NA""",Languages categorized as French or French Creole in 1990 are further broken down into more specific languages in later years,doi:10.5063/F1CJ8BPH
+portuguese_or_portuguese_creole,Number of people in the city 5 years and older that speak Portuguese or Portuguese Creole at home,NA,ratio,numericDomain,NA,number,whole,NA,NA,doi:10.5063/F1CJ8BPH
+spanish_or_spanish_creole,Number of people in the city 5 years and older that speak Spanish or Spanish Creole at home,NA,ratio,numericDomain,NA,number,whole,NA,NA,doi:10.5063/F1CJ8BPH
+polish,Number of people in the city 5 years and older that speak Polish at home,NA,ratio,numericDomain,NA,number,whole,NA,NA,doi:10.5063/F1CJ8BPH
+russian,Number of people in the city 5 years and older that speak Russian at home,NA,ratio,numericDomain,NA,number,whole,NA,NA,doi:10.5063/F1CJ8BPH
+south_slavic,Number of people in the city 5 years and older that speak a south Slavic language at home,NA,ratio,numericDomain,NA,number,whole,"""NA""",Languages categorized as South Slavic in 1990 are further broken down into more specific languages in later years,doi:10.5063/F1CJ8BPH
+arabic,Number of people in the city 5 years and older that speak Arabic at home,NA,ratio,numericDomain,NA,number,whole,NA,NA,doi:10.5063/F1CJ8BPH
+tagalog,Number of people in the city 5 years and older that speak Tagalog at home,NA,ratio,numericDomain,NA,number,whole,NA,NA,doi:10.5063/F1CJ8BPH
+chinese,Number of people in the city 5 years and older that speak Chinese at home,NA,ratio,numericDomain,NA,number,whole,NA,NA,doi:10.5063/F1CJ8BPH
+hungarian,Number of people in the city 5 years and older that speak Hungarian at home,NA,ratio,numericDomain,NA,number,whole,NA,NA,doi:10.5063/F1CJ8BPH
+japanese,Number of people in the city 5 years and older that speak Japanese at home,NA,ratio,numericDomain,NA,number,whole,NA,NA,doi:10.5063/F1CJ8BPH
+korean,Number of people in the city 5 years and older that speak Korean at home,NA,ratio,numericDomain,NA,number,whole,NA,NA,doi:10.5063/F1CJ8BPH
+vietnamese,Number of people in the city 5 years and older that speak Vietnamese at home,NA,ratio,numericDomain,NA,number,whole,NA,NA,doi:10.5063/F1CJ8BPH
+other_and_unspecified_languages,Number of people in the city 5 years and older that speak other and unspecified languages at home,NA,ratio,numericDomain,NA,number,whole,NA,NA,doi:10.5063/F1CJ8BPH
+french_incl_patois_cajun,"Number of people in the city 5 years and older that speak French, including Patois/Cajun at home",NA,ratio,numericDomain,NA,number,whole,"""NA""",Not recorded in 1990. All French speakers are categorized as french_or_french_creole,doi:10.5063/F1CJ8BPH
+french_creole,Number of people in the city 5 years and older that speak French Creole at home,NA,ratio,numericDomain,NA,number,whole,"""NA""",Not recorded in 1990. All French speakers are categorized as french_or_french_creole,doi:10.5063/F1CJ8BPH
+other_west_germanic_languages,Number of people in the city 5 years and older that speak other West Germanic languages at home,NA,ratio,numericDomain,NA,number,whole,NA,NA,doi:10.5063/F1CJ8BPH
+scandinavian_languages,Number of people in the city 5 years and older that speak Scandinavian languages at home,NA,ratio,numericDomain,NA,number,whole,NA,NA,doi:10.5063/F1CJ8BPH
+serbo_croatian,Number of people in the city 5 years and older that speak Serbo-Croatian at home,NA,ratio,numericDomain,NA,number,whole,"""NA""",Not recoreded in 1990,doi:10.5063/F1CJ8BPH
+other_slavic_languages,Number of people in the city 5 years and older that speak other Slavic languages at home,NA,ratio,numericDomain,NA,number,whole,NA,NA,doi:10.5063/F1CJ8BPH
+armenian,Number of people in the city 5 years and older that speak Armenian at home,NA,ratio,numericDomain,NA,number,whole,"""NA""",Not recorded in 1990,doi:10.5063/F1CJ8BPH
+persian,Number of people in the city 5 years and older that speak Persian at home,NA,ratio,numericDomain,NA,number,whole,"""NA""",Not recorded in 1990,doi:10.5063/F1CJ8BPH
+gujarati,Number of people in the city 5 years and older that speak Gujarati at home,NA,ratio,numericDomain,NA,number,whole,"""NA""",Not recorded in 1990,doi:10.5063/F1CJ8BPH
+hindi,Number of people in the city 5 years and older that speak Hindi at home,NA,ratio,numericDomain,NA,number,whole,"""NA""",Not recorded in 1990,doi:10.5063/F1CJ8BPH
+urdu,Number of people in the city 5 years and older that speak Urdu at home,NA,ratio,numericDomain,NA,number,whole,"""NA""",Not recorded in 1990,doi:10.5063/F1CJ8BPH
+other_indic_languages,Number of people in the city 5 years and older that speak other Indic languages at home,NA,ratio,numericDomain,NA,number,whole,"""NA""",Not recorded in 1990. All Indic languages are categorized as indic,doi:10.5063/F1CJ8BPH
+other_indo_european_languages,Number of people in the city 5 years and older that speak other Indo-European languages at home,NA,ratio,numericDomain,NA,number,whole,NA,NA,doi:10.5063/F1CJ8BPH
+mon_khmer_cambodian,Number of people in the city 5 years and older that speak Mon-Khmer at home,NA,ratio,numericDomain,NA,number,whole,NA,NA,doi:10.5063/F1CJ8BPH
+hmong,Number of people in the city 5 years and older that speak Hmong at home,NA,ratio,numericDomain,NA,number,whole,"""NA""",Not recorded in 1990,doi:10.5063/F1CJ8BPH
+thai,Number of people in the city 5 years and older that speak Thai at home,NA,ratio,numericDomain,NA,number,whole,"""NA""",Not recorded in 1990,doi:10.5063/F1CJ8BPH
+laotian,Number of people in the city 5 years and older that speak Laotian at home,NA,ratio,numericDomain,NA,number,whole,"""NA""",Not recorded in 1990,doi:10.5063/F1CJ8BPH
+other_asian_languages,Number of people in the city 5 years and older that speak other Asian languages at home,NA,ratio,numericDomain,NA,number,whole,"""NA""",Not recorded in 1990,doi:10.5063/F1CJ8BPH
+other_pacific_island_languages,Number of people in the city 5 years and older that speak other Pacific Island languages at home,NA,ratio,numericDomain,NA,number,whole,"""NA""",Not recorded in 1990,doi:10.5063/F1CJ8BPH
+navajo,Number of people in the city 5 years and older that speak Navajo at home,NA,ratio,numericDomain,NA,number,whole,"""NA""",Not recorded in 1990,doi:10.5063/F1CJ8BPH
+other_native_north_american_languages,Number of people in the city 5 years and older that speak other native North American languages at home,NA,ratio,numericDomain,NA,number,whole,NA,NA,doi:10.5063/F1CJ8BPH
+hebrew,Number of people in the city 5 years and older that speak Hebrew at home,NA,ratio,numericDomain,NA,number,whole,"""NA""",Not recorded in 1990,doi:10.5063/F1CJ8BPH
+african_languages,Number of people in the city 5 years and older that speak African languages at home,NA,ratio,numericDomain,NA,number,whole,"""NA""",Not recorded in 1990,doi:10.5063/F1CJ8BPH
+data_file_year,Year or years that the data were collected,NA,nominal,textDomain,Year or years that the data were collected,NA,NA,NA,NA,doi:10.5063/F1CJ8BPH
